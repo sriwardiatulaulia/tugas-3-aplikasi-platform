@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIKA - Dasboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <H1>SIKA</H1>
+        <P>Sistem informasi akademik</P>
+    </header>
+    <nav aria-label="Navigasi utama">
+        <ul>
+            <li><a href="index.html">dashboard</a></li>
+            <li><a href="mahasiswa.html">profil mahasiswa</a></li>
+            <li><a href="form-mahasiswa.html">from-mahasiswa</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="dashboard-grid">
+            <article class="card">
+              <h2>Mahasiswa</h2>
+              <p>Kelola data mahasiswa.</p>  
+            </article>
+
+            <article class="card">
+                <h2>Matakuliah</h2>
+                <p>Informasi mata kuliah.</p>
+            </article>
+            <article class="card">
+                <h2>KRS</h2>
+                <P>Rencana studi mahasiswa.</P>
+            </article>
+            </section>
+        <section>
+        <h1>form data mahasiswa</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="nim">NIM</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="nama">nama lengkap</label>
+                <input type="text">
+
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email">
+
+            </div>
+            <div>
+                <label for="prodi">program studi</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">-- pilih --</option>
+                    <option value="IT">teknik informatika</option>
+                    <option value="SI">Sistem informasi</option>
+                </select>
+            </div>
+            <div>
+                <label for="angkatan">angkatan</label>
+                <input type="number">
+
+            </div>
+            <fieldset>
+                <legend>status akademik</legend>
+                <input type="radio">
+
+                <label for="aktif">aktif</label>
+                <input type="radio">
+                <label for="nonaktif">nonktif</label>
+            </fieldset>
+            <button type="submit">simpan</button>
+            <button type="reset">reset</button>
+        </section>
+            <h2>Mahasiswa</h2>
+            <p>selamat datang di prototipe SIKA.</p>
+        </section>
+        <aside>
+            <h2>informasi</h2>
+            <p>Data pada bab 2 masih berupa data statis.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2026 SIKA</p>
+    </footer>
+</body>
+
+</html>

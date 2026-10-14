@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIKA - Profil Mahasiswa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>SIKA</h1>
+            <p>Sistem Informasi Akademik</p>
+        </div>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <ul class="container">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="mahasiswa.html" aria-current="page">Profil Mahasiswa</a></li>
+            <li><a href="form-mahasiswa.html">Form Mahasiswa</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>form data mahasiswa</h1>
+        <form action="#" method="post">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="Nim">Nim</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="Nama">Nama</label>
+                <input type="text">
+
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email">
+
+            </div>
+            <div class="form-group">
+                <label for="Prodi">Program studi</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">-- pilih --</option>
+                    <option value="IT">Teknik informatika</option>
+                    <option value="SI">Sistem informasi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Angkatan">Angkatan</label>
+                <input type="number">
+            </div>
+        </div>
+            <fieldset>
+                <legend>Status Akademik</legend>
+                <input type="radio">
+
+                <label for="aktif">aktif</label>
+                <input type="radio">
+                <label for="nonaktif">nonktif</label>
+            </fieldset>
+            <button type="submit">simpan</button>
+            <button type="reset">reset</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2026 SIKA</p>
+    </footer>
+</body>
